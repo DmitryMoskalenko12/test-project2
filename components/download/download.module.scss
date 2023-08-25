@@ -1,0 +1,86 @@
+@use '../../styles/variables.scss';
+@use '../../styles/mixins.scss';
+
+.download {
+  min-height: 233px;
+  padding: 47px 21px 47px 21px;
+  background: url('/images/download320.webp') center center/cover no-repeat;
+}
+
+.title {
+  color: variables.$looking;
+  text-align: center;
+  font-family: variables.$fontFamily;
+  font-size: variables.$fontSize28;
+  font-weight: variables.$fontWeight500;
+}
+
+.descr {
+  color: variables.$lookingDescr;
+  text-align: center;
+  font-family: variables.$fontFamily;
+  font-size: variables.$fontSize20;
+  font-weight: variables.$fontWeight400;
+  margin-top: 14px;
+}
+
+.mainLink {
+  display: block;
+  margin-top: 59px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .download {
+    min-height: 124px;
+    padding: 43px 24px 36px 24px;
+    background: url('/images/download768.webp') center center/cover no-repeat;
+  }
+  
+  .wrapper {
+    display: flex;
+    align-items: center;
+    gap: 87px;
+  }
+
+  .title {
+    text-align: left;
+    font-size: variables.$fontSize32;
+    font-weight: variables.$fontWeight400;
+  }
+
+  .descr {
+    text-align: left;
+    font-size: variables.$fontSize20;
+    font-weight: variables.$fontWeight300;
+  }
+
+  .mainLink {
+    margin-top: 0;
+   svg {
+    width: 297px;
+    height: 70px;
+   }
+  }
+}
+
+@media (min-width: 1440px) {
+  .download {
+    min-height: 110px;
+    padding: 40px 80px 55px 80px;
+    background: url('/images/download1440.webp') center center/cover no-repeat;
+  }
+  
+  .wrapper {
+    gap: 300px;
+  }
+
+  .title {
+    font-size: variables.$fontSize38;
+  }
+
+  .descr {
+    font-size: variables.$fontSize24;
+  }
+
+}
