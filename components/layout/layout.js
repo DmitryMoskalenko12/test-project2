@@ -1,7 +1,12 @@
-const Layout = () => {
+import Header from "../header/header";
+const Layout = (props) => {
   return <>
-  sgrrgerg
+    <Header/>
+    <main>
+     {props.children}
+   </main>
   </>
+
 }
 
 export default Layout;

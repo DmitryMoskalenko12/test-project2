@@ -1,0 +1,15 @@
+.slider {
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1440px) {
+  .swiper-slide {
+    user-select: none;
+  }
+  
+  .slider {
+    width: 1320px;
+    padding: 0;
+  }
+}

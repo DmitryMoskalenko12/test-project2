@@ -1,0 +1,196 @@
+@use '../../styles/variables.scss';
+@use '../../styles/mixins.scss';
+
+.additional {
+  min-height: 1054px;
+}
+
+.title {
+  color: variables.$looking;
+  font-family: variables.$fontFamily;
+  font-size: variables.$fontSize28;
+  font-weight: variables.$fontWeight700;
+  text-align: left;
+  padding-left: 15px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 37px;
+}
+
+.block1 {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.subBlock {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.number1, .number2, .number3, .number4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 59px;
+  height: 59px;
+  border-radius: 14px;
+  color: variables.$main-white;
+  text-align: center;
+  font-family: variables.$fontFamily;
+  font-size: variables.$fontSize32;
+  font-weight: variables.$fontWeight400;
+}
+
+.number1 {
+  background: variables.$backGround1;
+}
+
+.number2 {
+  background: variables.$backGround2;
+}
+
+.number3 {
+  background: variables.$backGround3;
+}
+
+.number4 {
+  background: variables.$backGround4;
+}
+
+.descr {
+  width: 240px;
+}
+
+.subTitle {
+  color: variables.$looking;
+  font-family: variables.$fontFamily;
+  font-size: variables.$fontSize19;
+  font-weight: variables.$fontWeight600;
+}
+
+.subDescr {
+  color: variables.$lookingDescr;
+  font-family: variables.$fontFamily;
+  font-size: variables.$fontSize20;
+  font-weight: variables.$fontWeight400;
+}
+
+.block2 {
+  width: 300px;
+  height: 480px;
+  margin-top: 43px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 375px) {
+  .block2 {
+    width: 375px;
+  }
+
+  .descr {
+    width: 274px;
+  }
+
+  .subTitle {
+    font-size: variables.$fontSize20;
+  }
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: variables.$fontSize28;
+    font-weight: variables.$fontWeight400;
+    padding-left: 15px;
+  }
+
+  .block2 {
+    width: 751px;
+    height: 701px;
+  }
+
+  .wrapper {
+    margin-top: 55px;
+  }
+
+  .block1 {
+    align-self: start;
+    margin-left: 44px;
+  }
+
+  .subBlock {
+    gap: 50px;
+  }
+
+  .subTitle {
+    font-size: variables.$fontSize24;
+    font-weight: variables.$fontWeight400;
+  }
+
+  .descr {
+    width: initial;
+  }
+
+  .subTitle {
+    font-size: variables.$fontSize20;
+  }
+}
+
+@media (min-width: 1440px) {
+  .additional {
+    min-height: 700px;
+  }
+  
+  .title {
+    font-size: variables.$fontSize38;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .block2 {
+    position: relative;
+    left: -78px;
+    width: 700px;
+    height: 646px;
+    margin-top: 0;
+  }
+
+  .wrapper {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    margin-top: 38px;
+    gap: 120px;
+  }
+
+  .block1 {
+    align-self: start;
+    margin-left: 0;
+    margin-top: 82px;
+  }
+
+  .subBlock {
+    gap: 33px;
+  }
+
+  .descr {
+    width: initial;
+  }
+
+  .subTitle {
+    font-size: variables.$fontSize20;
+  }
+
+  .subDescr {
+    font-weight: variables.$fontWeight300;
+  }
+}

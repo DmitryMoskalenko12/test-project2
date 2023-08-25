@@ -1,0 +1,127 @@
+@use '../../styles/variables.scss';
+@use '../../styles/mixins.scss';
+
+.overview {
+  padding: 90px 12px 90px 12px;
+  min-height: 1140px;
+}
+
+.title {
+  color: variables.$looking;
+  text-align: center;
+  font-family: variables.$fontFamily;
+  font-size: variables.$fontSize28;
+  font-weight: variables.$fontWeight700;
+}
+
+.subBlock1 {
+  height: 730px;
+  overflow-y: hidden;
+}
+
+.subTitle {
+  color: variables.$lookingDescr;
+  font-family: variables.$fontFamily;
+  font-size: variables.$fontSize20;
+  font-weight: variables.$fontWeight600;
+  margin-top: 21px;
+}
+
+.descr {
+  color: variables.$looking;
+  font-family: variables.$fontFamily;
+  font-size: variables.$fontSize20;
+  font-weight: variables.$fontWeight400;
+}
+
+.linkMore {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 30px;
+  margin-top: 15px;
+  color: variables.$main-red;
+  font-family: variables.$fontFamily;
+  font-size: variables.$fontSize20;
+  font-weight: variables.$fontWeight500;;
+  text-decoration: none;
+}
+
+.br {
+  margin-top: 30px;
+}
+
+@media(min-width: 768px) {
+  .overview {
+    padding: 90px 12px 90px 12px;
+    min-height: 936px;
+  }
+
+  .title {
+    text-align: left;
+    font-weight: variables.$fontWeight400;
+  }
+
+  .subTitle {
+    margin-top: 31px;
+  }
+
+  .subBlock1 {
+    height: 430px;
+  }
+
+  .linkMore {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 31px;
+  }
+  
+}
+
+@media(min-width: 1440px) {
+  .overview {
+    padding: 105px 80px 0px 80px;
+    min-height: 580px;
+  }
+
+  .wrapper {
+    display: flex;
+    gap: 31px;
+  }
+
+  .subBlock2 {
+    width: 953px;
+  }
+
+  .title {
+    text-align: left;
+    font-size: variables.$fontSize38;
+    font-weight: variables.$fontWeight400;
+  }
+
+  .subTitle {
+    font-weight: variables.$fontWeight300;
+    margin-top: 31px;
+  }
+
+  .descr {
+    font-weight: variables.$fontWeight300;
+  }
+
+  .subBlock1 {
+    height: 430px;
+  }
+
+  .br {
+    margin-top: 15px;
+  }
+
+  .linkMore {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+}

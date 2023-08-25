@@ -1,12 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Merienda&family=Montserrat:wght@400;500;600;700;900&family=Rubik:wght@300;400;500;600&display=swap');
+@use './variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
-  padding: 0;
   font-family: 'Rubik', sans-serif;
 }
 
@@ -14,29 +17,206 @@ body {
   margin: 0 auto;
 }
 
+.swiper-container {
+  margin-top: 27px;
+}
+
+.swiper-container2 .swiper-wrapper {
+  margin-top: 39px;
+}
+
+.swiper-container .swiper-pagination-bullet-active {
+  background: variables.$main-black; 
+}
+
+.swiper-container2 .swiper-pagination-bullet-active {
+  background: variables.$main-red; 
+}
+
+.swiper-container .swiper-slide {
+  width: 300px;
+  height: 322px;
+  background: black;
+  border-radius: 24px;
+  img {
+    border-radius: 24px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.swiper-container2 .swiper-slide {
+  width: 300px;
+  height: 298px;
+  background: black;
+  border-radius: 24px;
+  img {
+    border-radius: 24px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.swiper-container .swiper-pagination {
+ position: static;
+ margin-top: 14px;
+}
+
+.swiper-container2 .swiper-pagination {
+  position: static;
+  margin-top: 14px;
+}
+
 @media (min-width: 320px) {
+  body {
+    background: url('../public/images/Mobile.webp') top center/cover no-repeat;
+  }
 
   .container {
     width: auto;
   }
 }
 
+@media (min-width: 375px) {
+  .swiper-container {
+    margin-top: 12px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .swiper-container2 {
+    margin-top: 12px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 @media (min-width: 768px) {
+  body {
+    background: url('../public/images/Tablet.webp') top center/cover no-repeat;
+  }
 
   .container {
     max-width: 720px;
   }
-}
+  
+  .swiper-container {
+    margin-top: 79px;
+  }
 
-@media (min-width: 990px) {
+  .swiper-container2 .swiper-wrapper {
+    margin-top: 51px;
+  }
 
-  .container {
-    max-width: 958px;
+  .swiper-container .swiper-slide {
+    background: black;
+    border-radius: 24px;
+    img {
+      border-radius: 24px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  .swiper-container2 .swiper-slide {
+    background: black;
+    border-radius: 24px;
+    img {
+      border-radius: 24px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
   }
 }
 
+
 @media (min-width: 1440px) {
-  
+  body {
+    background: url('../public/images/Desktop.webp') top center/cover no-repeat;
+  }
+
+  .swiper-container {
+    margin-top: 43px;
+  }
+
+  .swiper-container2 {
+    margin-top: 0px;
+  }
+
+  .swiper-container2 .swiper-wrapper {
+    width: 590px;
+    margin-top: 17px;
+  }
+
+  .swiper-container2 .swiper-pagination {
+    position: static;
+    margin-top: 14px;
+    margin-left: -40px;
+  }
+
+  .swiper-container2 .swiper-pagination-bullet-active {
+    background: variables.$main-black; 
+  }
+
+  .swiper-container2 .swiper-pagination .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+  }
+
+  .swiper-container2 .swiper-slide-active{
+    max-width: 240px;
+  }
+
+  .swiper-container2 .swiper-slide-next{
+    max-width: 377px;
+  }
+
+  .swiper-container .swiper-slide {
+    height: 530px;
+    background: black;
+    border-radius: 24px;
+    img {
+      border-radius: 24px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  .swiper-container2 .swiper-slide {
+    height: 473px;
+    background: black;
+    border-radius: 24px;
+    img {
+      border-radius: 24px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  .swiper-container .swiper-slide-active {
+    width: 450px;
+  }
+
+  .swiper-container .swiper-slide-prev {
+    width: 280px;
+  }
+
+  .swiper-container .swiper-slide-next {
+    width: 280px;
+  }
+
   .container {
     max-width: 1320px;
   }
