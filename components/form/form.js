@@ -34,7 +34,7 @@ const Form = () => {
 
   return (
     <section className={classes.form}>
-      <div className="containder">
+      <div className="container">
         <div className={classes.wrapper}>
           <div className={classes.block1}>
             <h2 className={classes.title}>Looking for an excellent business idea?</h2>
@@ -78,7 +78,7 @@ const Form = () => {
           </form>
         </div>
       </div>
-      {process === 'success' ? <div onClick={hidePopup} className={classes.popup}><div className={classes.popupContent}>Ваши данные успешно отправлены!</div></div>: null}
+      {process === 'success' ? <div onClick={hidePopup} className={classes.popup}><div className={classes.popupContent}>Ваші дані успішно надіслані!</div></div>: null}
     </section>
   )
 }

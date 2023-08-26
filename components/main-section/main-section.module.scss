@@ -24,14 +24,21 @@
 }
 
 .mainLink {
- display: block;
- text-align: center;
- margin-top: 12px;
+  width: 297px;
+  height: 70px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  margin-top: 12px;
+  svg {
+    width: 297px;
+    height: 70px;
+  }
 }
 
 @media (min-width: 375px) {
   .main {
-    padding: 49px 45px 0px 45px;
+    padding: 49px 39px 0px 39px;
     min-height: 404px;
   }
 
@@ -76,12 +83,25 @@
   }
 
   .mainLink {
+    width: 297px;
+    height: 70px;
+    margin: 0 auto;
     svg {
       width: 297px;
       height: 70px;
     }
     margin-top: 45px;
    }
+}
+
+@media (min-width: 992px) {
+  .mainLink {
+    transition: variables.$transition;
+    &:hover {
+      transition: variables.$transition;
+      transform: scale(105%);
+    }
+  }
 }
 
 @media (min-width: 1440px) {

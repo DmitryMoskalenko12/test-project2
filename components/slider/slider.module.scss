@@ -3,13 +3,24 @@
   margin: 0 auto;
 }
 
+@media (min-width: 768px) {
+  .swiper-slide {
+    user-select: none;
+  }
+  
+  .slider {
+    width: 768px;
+    padding: 0;
+  }
+}
+
 @media (min-width: 1440px) {
   .swiper-slide {
     user-select: none;
   }
   
   .slider {
-    width: 1320px;
+    width: 1420px;
     padding: 0;
   }
 }

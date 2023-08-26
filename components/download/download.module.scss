@@ -64,6 +64,16 @@
   }
 }
 
+@media (min-width: 992px) {
+  .mainLink {
+    transition: variables.$transition;
+    &:hover {
+      transition: variables.$transition;
+      transform: scale(105%);
+    }
+  }
+}
+
 @media (min-width: 1440px) {
   .download {
     min-height: 110px;

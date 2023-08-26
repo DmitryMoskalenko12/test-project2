@@ -47,8 +47,6 @@ const Overview = () => {
               slidesPerView={1}
               grabCursor = {true}
               spaceBetween={0}
-              onSlideChange={() => console.log('slide change')}
-              onSwiper={(swiper) => console.log(swiper)}
               breakpoints={{
                 320: {
                   spaceBetween: 25,
@@ -72,13 +70,13 @@ const Overview = () => {
                 },
               }}
               >
-                <SwiperSlide className="slide"><Image src={'/images/picture2.webp'} width={322} height={322}/></SwiperSlide>
-                <SwiperSlide className="slide"><Image src={'/images/picture2.webp'} width={322} height={322}/></SwiperSlide>
-                <SwiperSlide className="slide"><Image src={'/images/picture2.webp'} width={322} height={322}/></SwiperSlide>
-                <SwiperSlide className="slide"><Image src={'/images/picture2.webp'} width={322} height={322}/></SwiperSlide>
-                <SwiperSlide className="slide"><Image src={'/images/picture2.webp'} width={322} height={322}/></SwiperSlide>
-                <SwiperSlide className="slide"><Image src={'/images/picture2.webp'} width={322} height={322}/></SwiperSlide>
-                <SwiperSlide className="slide"><Image src={'/images/picture2.webp'} width={322} height={322}/></SwiperSlide>
+                <SwiperSlide className="slide"><Image src={'/images/picture2.webp'} width={322} height={322} alt='You will see card-slider'/></SwiperSlide>
+                <SwiperSlide className="slide"><Image src={'/images/picture2.webp'} width={322} height={322} alt='You will see card-slider'/></SwiperSlide>
+                <SwiperSlide className="slide"><Image src={'/images/picture2.webp'} width={322} height={322} alt='You will see card-slider'/></SwiperSlide>
+                <SwiperSlide className="slide"><Image src={'/images/picture2.webp'} width={322} height={322} alt='You will see card-slider'/></SwiperSlide>
+                <SwiperSlide className="slide"><Image src={'/images/picture2.webp'} width={322} height={322} alt='You will see card-slider'/></SwiperSlide>
+                <SwiperSlide className="slide"><Image src={'/images/picture2.webp'} width={322} height={322} alt='You will see card-slider'/></SwiperSlide>
+                <SwiperSlide className="slide"><Image src={'/images/picture2.webp'} width={322} height={322} alt='You will see card-slider'/></SwiperSlide>
               </Swiper>
          </div>
        </div>

@@ -28,9 +28,9 @@
   @include mixins.flex(flex, center, center);
   flex-direction: column;
   position: fixed;
-  left: -50%;
+  left: -49%;
   top: 0;
-  width: 50%;
+  width: 49%;
   height: 100%;
   background-color: grey;
   transition: variables.$transition;
@@ -51,7 +51,7 @@
   position: fixed;
   left: 0%;
   top: 0px;
-  width: 50%;
+  width: 49%;
   height: 100%;
   background-color: grey;
   transition: variables.$transition;
@@ -112,12 +112,7 @@
   }
 }
 
-@media (min-width: 1440px) {
-  .main {
-    padding: 46px 80px 0px 80px;
-    min-height: 84px;
-  }
-
+@media (min-width: 992px) {
   .wrapper {
     position: relative;
     @include mixins.flex(flex, space-between, center);
@@ -149,6 +144,28 @@
 
   .hamburger {
     display: none;
+  }
+  
+  .link {
+    padding: 0 15px;
+  }
+  
+  .link {
+     transition: variables.$transition;
+    &:hover {
+      transition: variables.$transition;
+      color: variables.$hover;
+    }
+    &:active {
+      color: variables.$active;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .main {
+    padding: 46px 80px 0px 80px;
+    min-height: 84px;
   }
   
   .link {

@@ -15,7 +15,7 @@
 }
 
 .subBlock1 {
-  height: 730px;
+  height: 740px;
   overflow-y: hidden;
 }
 
@@ -49,6 +49,12 @@
   margin-top: 30px;
 }
 
+@media(min-width: 425px) {
+  .subBlock1 {
+    height: 620px;
+  }
+}
+
 @media(min-width: 768px) {
   .overview {
     padding: 90px 12px 90px 12px;
@@ -68,6 +74,10 @@
     height: 430px;
   }
 
+  .block2 {
+    margin: 0 auto;
+  }
+  
   .linkMore {
     @include mixins.flex (flex, left, center);
     margin-top: 31px;
@@ -83,7 +93,14 @@
 
   .wrapper {
     display: flex;
-    gap: 31px;
+    gap: 0;
+  }
+
+  .block2 {
+    position: relative;
+    left: 80px;
+    width: 747px;
+    margin: 0;
   }
 
   .subBlock2 {
