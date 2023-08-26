@@ -5,7 +5,6 @@ import Additional from "@/components/additional/additional"
 import Overview from "@/components/overview/overview"
 import Download from "@/components/download/download"
 import Form from "@/components/form/form"
-import Footer from "@/components/footer/footer"
 
 export default function Home() {
   return (
@@ -17,7 +16,6 @@ export default function Home() {
     <Overview/>
     <Download/>
     <Form/>
-    <Footer/>
     </>
   )
 }

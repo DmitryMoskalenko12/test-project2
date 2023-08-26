@@ -7,6 +7,11 @@ import 'swiper/scss/navigation';
 import 'swiper/scss/pagination';
 
 const Overview = () => {
+
+  const disabledLink = (e) => {
+    e.preventDefault()
+  }
+
   return (
     <section id='screenShots' className={classes.overview}>
       <div className="container">
@@ -30,7 +35,7 @@ const Overview = () => {
                   This application needs internet access to get the solution.
                 </div>
             </div>
-             <a className={classes.linkMore} href="#">
+             <a onClick ={disabledLink} className={classes.linkMore} href="#">
               Learn More 
               <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
                 <circle cx="11.5" cy="11.5" r="11" stroke="#F35D5D"/>

@@ -20,12 +20,16 @@ const Header = () => {
     }
   }
 
+  const disabledLink = (e) => {
+    e.preventDefault()
+ }
+
   return (
     <header className={classes.header}>
       <div className="container">
        <div className={classes.wrapper}>
         <div className={classes.logo}>
-          <a href="#">
+          <a onClick ={disabledLink} href="#">
           LOGO HERE!
           </a>
         </div>
