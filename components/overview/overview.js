@@ -8,7 +8,7 @@ import 'swiper/scss/pagination';
 
 const Overview = () => {
   return (
-    <section className={classes.overview}>
+    <section id='screenShots' className={classes.overview}>
       <div className="container">
        <div className={classes.wrapper}>
          <div className={classes.block1}>

@@ -1,0 +1,85 @@
+@use '../../styles/variables.scss';
+@use '../../styles/mixins.scss';
+
+.footer {
+  min-height: 80px;
+  padding: 39px 10px 23px 10px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+  grid-auto-rows: 1fr;
+}
+
+.block1 {
+  display: grid;
+  grid-template-columns: 2fr;
+}
+
+.social {
+  display: flex;
+  gap: 18px;
+}
+
+.year {
+  color: variables.$looking;
+  font-family: variables.$fontFamily2;
+  font-size: variables.$fontSize12;
+  font-weight: variables.$fontWeight400;
+  margin-top: 26px;
+}
+
+.block2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 13px;
+}
+
+.link {
+  color: variables.$looking;
+  text-align: right;
+  font-family: variables.$fontFamily2;
+  font-size: variables.$fontSize14;
+  font-weight: variables.$fontWeight400;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    min-height: 72px;
+    padding: 34px 25px 39px 25px;
+  }
+
+  .year {
+    font-size: variables.$fontSize14;
+    margin-top: 15px;
+  }
+
+  .block2 {
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 25px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .footer {
+    padding: 9px 80px 35px 80px;
+  }
+
+  .year {
+    font-size: variables.$fontSize14;
+    font-weight: variables.$fontWeight300;
+  }
+
+  .link {
+    font-weight: variables.$fontWeight300;
+  }
+
+  .block2 {
+    justify-content: flex-end;
+  }
+}

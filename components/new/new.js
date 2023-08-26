@@ -2,7 +2,7 @@ import classes from './new.module.scss';
 
 const New = () => {
   return (
-    <section className={classes.new}>
+    <section id='about' className={classes.new}>
       <div className="container">
         <h2 className={classes.title}>
           What is new in our product

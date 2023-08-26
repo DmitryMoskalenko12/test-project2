@@ -2,7 +2,7 @@ import classes from './additional.module.scss';
 
 const Additional = () => {
   return (
-    <section className={classes.additional}>
+    <section id='features' className={classes.additional}>
       <div className="container">
         <h2 className={classes.title}>Additional app information</h2>
         <div className={classes.wrapper}>

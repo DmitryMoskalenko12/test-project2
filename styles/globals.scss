@@ -7,10 +7,12 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: 'Rubik', sans-serif;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -137,6 +139,11 @@ body {
   }
 }
 
+@media (min-width: 990px) {
+  .container {
+    max-width: 958px;
+  }
+}
 
 @media (min-width: 1440px) {
   body {

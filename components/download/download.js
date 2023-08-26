@@ -1,8 +1,12 @@
 import classes from './download.module.scss';
+import { useRouter } from 'next/router';
 
 const Download = () => {
+  const router = useRouter()
+  const res = router.query.app_offer_link ? router.query.app_offer_link : 'https://www.google.com/';
+
   return (
-    <section className={classes.download}>
+    <section id='process' className={classes.download}>
       <div className="container">
         <div className={classes.wrapper}>
           <div className={classes.block1}>
@@ -11,7 +15,7 @@ const Download = () => {
             Practice solving your puzzle as fast as possible with random shuffling and a timer with full statistics
             </div>
           </div>
-          <a className={classes.mainLink} href="#">
+          <a className={classes.mainLink} href={res}>
               <svg xmlns="http://www.w3.org/2000/svg" width="224" height="53" viewBox="0 0 224 53" fill="none">
                   <path d="M211.061 6.48499e-05H12.9397C5.79341 6.48499e-05 0 4.5388 0 10.1396V42.6535C0 48.2543 5.79341 52.7947 12.9397 52.7947H211.061C218.206 52.7947 224 48.2543 224 42.6535V10.1396C224 4.5388 218.206 6.48499e-05 211.061 6.48499e-05Z" fill="#F35D5D"/>
                   <path d="M50.6474 20.6965L44.6179 26.6848L26.9172 8.66397C27.8051 8.13011 28.962 8.04527 29.9856 8.64121L50.6474 20.6965Z" fill="white"/>
