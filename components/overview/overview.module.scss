@@ -14,6 +14,11 @@
   font-weight: variables.$fontWeight700;
 }
 
+.block1 {
+  height: 815px;
+  overflow-y: hidden;
+}
+
 .subBlock1 {
   height: 740px;
   overflow-y: hidden;
@@ -50,6 +55,10 @@
 }
 
 @media(min-width: 425px) {
+  .block1 {
+    height: 753px;
+  }
+
   .subBlock1 {
     height: 620px;
   }
@@ -68,6 +77,10 @@
 
   .subTitle {
     margin-top: 31px;
+  }
+
+  .block1 {
+    height: 482px;
   }
 
   .subBlock1 {
@@ -120,6 +133,10 @@
 
   .descr {
     font-weight: variables.$fontWeight300;
+  }
+
+  .block1 {
+    height: 550px;
   }
 
   .subBlock1 {
