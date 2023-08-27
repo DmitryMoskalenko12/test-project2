@@ -80,7 +80,7 @@
   }
 
   .block1 {
-    height: 482px;
+    height: 520px;
   }
 
   .subBlock1 {
@@ -94,6 +94,17 @@
   .linkMore {
     @include mixins.flex (flex, left, center);
     margin-top: 31px;
+  }
+  
+}
+
+@media(min-width: 992px) {
+  .block1 {
+    height: 485px;
+  }
+
+  .subBlock1 {
+    height: 390px;
   }
   
 }
